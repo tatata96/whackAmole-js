@@ -1,0 +1,92 @@
+.square {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: whitesmoke;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
+}
+
+.mole {
+  background-image: url(mole.png);
+  background-size: cover;
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    rgb(36, 82, 7) 0%,
+    rgba(0, 128, 128, 1) 100%
+  );
+  margin: 0px;
+  padding: 0px;
+}
+#t,
+#s {
+  display: inline-block;
+}
+#time-left,
+#sc {
+  display: inline-block;
+}
+
+.time,
+.sc {
+  width: 20%;
+  margin: auto;
+}
+h1 {
+  padding: 10px;
+  font-size: 2em;
+  letter-spacing: 0.5em;
+}
+h1,
+h2 {
+  font-family: "Bangers", cursive;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 0.25em;
+}
+
+@media only screen and (max-width: 760px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 2px;
+    margin: 5px;
+    justify-content: center;
+  }
+  .square {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 2px;
+    margin: 5px;
+    justify-content: center;
+  }
+  .square {
+    width: 90px;
+    height: 90px;
+  }
+
+  html {
+    margin-top: 100px;
+  }
+  h1,
+  h2 {
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+}
